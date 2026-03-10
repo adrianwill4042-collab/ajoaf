@@ -34,7 +34,7 @@ const LekkiApartment = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/40 backdrop-blur-xl border-b border-white/5">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <span className="font-display text-xl bg-gradient-to-r from-amber-200 to-amber-500 bg-clip-text text-transparent font-bold tracking-tighter">
-            NOVARA LUXE
+            ADORNED PROPERTIES
           </span>
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-sm font-medium text-slate-400 hover:text-amber-400 transition-colors">Features</a>
@@ -394,14 +394,14 @@ const LekkiApartment = () => {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row justify-between items-center gap-8">
             <span className="font-display text-2xl font-black text-white italic tracking-tighter">
-              NOVARA LUXE
+              ADORNED PROPERTIES
             </span>
             <div className="flex gap-12 text-slate-500 text-sm font-bold uppercase tracking-widest">
               <a href="#" className="hover:text-amber-500 transition-colors">Instagram</a>
               <a href="#" className="hover:text-amber-500 transition-colors">LinkedIn</a>
               <a href="#" className="hover:text-amber-500 transition-colors">Twitter</a>
             </div>
-            <p className="text-slate-600 text-xs font-medium">© {new Date().getFullYear()} Novara Ads Suite. All rights reserved.</p>
+            <p className="text-slate-600 text-xs font-medium">© {new Date().getFullYear()} Adorned Properties. All rights reserved.</p>
           </div>
         </div>
       </footer>
