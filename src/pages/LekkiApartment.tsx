@@ -4,7 +4,10 @@ import {
   Phone, MapPin, Shield, Clock, Check, 
   TrendingUp, Building2, MessageCircle, 
   Star, ArrowRight, Dumbbell, Activity, 
-  Wallet, Sparkles, Building
+  Wallet, Sparkles, Building, Wifi, 
+  Waves, Sofa, ArrowUpCircle, Smartphone, 
+  Lock, Zap, UserCheck, Eye, Car, 
+  Droplets, Bath, Home
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -146,14 +149,26 @@ const LekkiApartment = () => {
             <p className="text-slate-400 text-lg">These apartments are built with modern luxury and convenience in mind.</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Building, title: "Spacious 2 Bedroom", desc: "Thoughtfully designed for privacy and flow." },
-              { icon: Activity, title: "Centralized Gas", desc: "Modern utility systems for seamless living." },
-              { icon: Dumbbell, title: "Modern Gym", desc: "Fully equipped to keep you in peak physical form." },
-              { icon: Shield, title: "24/7 Facility Management", desc: "Professional estate management for peace of mind." },
-              { icon: MapPin, title: "Secure Environment", desc: "Well-planned community with top-tier security." },
-              { icon: Building2, title: "Premium Finishing", desc: "High-end contemporary architecture and materials." },
+              { icon: Wifi, title: "High speed WiFi", desc: "Always connected for business and leisure." },
+              { icon: Waves, title: "Swimming Pool", desc: "Relax and rejuvenate in our pristine pool." },
+              { icon: Sofa, title: "Resident's Private Lounge", desc: "An exclusive space for elite networking." },
+              { icon: Dumbbell, title: "Fully Fitted Gym", desc: "Top-of-the-line fitness equipment." },
+              { icon: ArrowUpCircle, title: "Elevator with Controls", desc: "Secure access to your luxury floor." },
+              { icon: Smartphone, title: "Smarthouse Enabled", desc: "Control your living experience digitally." },
+              { icon: Lock, title: "Smartlock", desc: "Advanced security at every entry point." },
+              { icon: Activity, title: "Intercom Systems", desc: "Seamless communication with staff." },
+              { icon: Clock, title: "Driver’s Sleepover", desc: "Dedicated rest area for your support staff." },
+              { icon: Shield, title: "Standby Security", desc: "Guarding your peace of mind day and night." },
+              { icon: Zap, title: "24/7 Power Supply", desc: "Uninterrupted energy for your luxury home." },
+              { icon: UserCheck, title: "24/7 Concierge Service", desc: "Professional assistance whenever required." },
+              { icon: Eye, title: "CCTV Surveillance", desc: "Full monitoring for ultimate safety." },
+              { icon: Car, title: "Ample Car Parking", desc: "Spacious and secure parking facilities." },
+              { icon: Droplets, title: "Water Treatment Plant", desc: "Pure and consistent water supply." },
+              { icon: Building2, title: "Excellent Drainage", desc: "Modern infrastructure to prevent flooding." },
+              { icon: Bath, title: "Ensuite Bathroom", desc: "Privacy and comfort in every bedroom." },
+              { icon: Home, title: "Contemporary Facade", desc: "Timeless architectural beauty." }
             ].map((feature, idx) => (
               <motion.div 
                 key={idx}
@@ -161,14 +176,14 @@ const LekkiApartment = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={{
-                  hidden: { opacity: 0, y: 20 },
-                  visible: { opacity: 1, y: 0, transition: { delay: idx * 0.1 } }
+                  hidden: { opacity: 0, y: 15 },
+                  visible: { opacity: 1, y: 0, transition: { delay: idx * 0.05 } }
                 }}
-                className="bg-[#111] p-8 rounded-2xl border border-white/5 hover:border-amber-500/30 transition-all group"
+                className="bg-[#111] p-6 rounded-xl border border-white/5 hover:border-amber-500/20 transition-all group"
               >
-                <feature.icon className="w-10 h-10 text-amber-500 mb-6 transition-transform group-hover:scale-110" />
-                <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-slate-400 leading-relaxed">{feature.desc}</p>
+                <feature.icon className="w-8 h-8 text-amber-500 mb-4 transition-transform group-hover:scale-110" />
+                <h3 className="text-base font-bold mb-1">{feature.title}</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">{feature.desc}</p>
               </motion.div>
             ))}
           </div>
