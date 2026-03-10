@@ -276,8 +276,8 @@ const LekkiApartment = () => {
                   allowFullScreen
                 />
               </div>
-              <p className="mt-4 text-amber-500 text-sm font-bold uppercase tracking-widest flex items-center gap-2 text-center justify-center">
-                <Sparkles className="w-4 h-4" /> Interior Highlight
+              <p className="mt-4 text-amber-500 text-sm font-bold flex items-center gap-2 text-center justify-center max-w-xs mx-auto">
+                <Sparkles className="w-4 h-4 shrink-0" /> Can’t afford to own a unit now. Join our co-owning system. Own shares and earn passively
               </p>
             </div>
           </div>
